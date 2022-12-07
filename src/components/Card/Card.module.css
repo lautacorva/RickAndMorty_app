@@ -1,0 +1,88 @@
+.card{
+    border: 1px solid black;
+    width: 300px;
+    margin: 40px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.521);
+    box-shadow: 0px 0px 10px black;
+}
+
+.container{
+    display: inline-block;
+    position: relative;
+
+}
+
+.imagen{
+    width: 300px;
+    height: 300px;
+}
+
+.botonFav{
+    position: absolute;
+    left: 1em;
+
+    color:black;
+    background-color:lightcoral;
+    border: 2px solid black;
+    width: 50px;
+    margin: 6px;
+    font-weight: 800;
+    transition: 0.1s;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.botonFav:hover{
+    cursor: pointer;
+    width: 70px;
+    color: white;
+    font-weight: 900;
+    background-color: chartreuse;
+    color: black;
+}
+
+.botonX{
+    position: absolute;
+    right: 1em;
+
+    color:white;
+    background-color: crimson;
+    border: 1px solid white;
+    width: 40px;
+    margin: 6px;
+    font-weight: 800;
+    transition: 0.1s;
+    border-radius: 2px;
+    box-shadow: -2px 2px 5px black;
+}
+
+.botonX:hover{
+    cursor: pointer;
+    width: 60px;
+    color: white;
+    font-weight: 900;
+}
+
+.nombre{
+    text-decoration: none;
+    position: absolute;
+    right: 25%;
+    left: 25%;
+    bottom: 1em;
+    font-size: 25px;
+    font-weight: 800;
+    min-width: 200px;
+    color: white;
+    text-shadow: 0px 0px 9px black;
+    transition: 0.1s
+}
+
+.nombre:hover{
+    text-decoration: underline greenyellow;
+    text-shadow: 0px 0px 5px greenyellow;
+}
+
+.texto{
+    background-color: rgba(255, 255, 255, 0.548);
+}

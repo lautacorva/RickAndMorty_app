@@ -1,0 +1,73 @@
+.primera{     
+    display: flex;
+    flex-direction: row;
+}
+
+.segunda{
+    width: 40%;
+    border-radius: 8px;
+    margin: 0px auto;
+    margin-top: 80px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0, .5);
+    box-shadow: 0px 0px 9px white;
+}
+
+.inputs{
+    height: 40px;
+    width: 350px;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.errMsg{
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: rgba(252, 35, 35, 0.397);
+}
+
+.ingresar{
+    margin: 15px;
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 0px 0px 3px black;
+    color: rgb(252, 252, 252);
+    background-color: rgb(54, 190, 177);
+}
+
+.ingresar:hover{
+    cursor: pointer;
+    background-color: rgb(61, 202, 188);
+    box-shadow: 0px 0px 4px rgb(113, 221, 25);
+}
+
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+*:-moz-placeholder {
+    /* Firefox anterior a 19 */
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+*::-moz-placeholder {
+    /* Firefox 19 y superior */
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+*:-ms-input-placeholder {
+    /* Internet Explorer 10 y superior */
+    font-weight: 400;
+    font-size: 18px;
+    
+}

@@ -27,22 +27,22 @@ function Card(props) {
 
 	return (
 		<div className={style.card}>
-			<div className={style.container}>
-				<img src={props.image} alt="" className={style.imagen}/>
-				{isFav ? (
-					<button onClick={handleFavorite} className={style.botonFav}>❤️</button>
-				) : (
-					<button onClick={handleFavorite} className={style.botonFav}>fav</button>
-				)}
-				<button onClick={() => props.onClose(props.id)} className={style.botonX}> <strong>X</strong> </button>
+
+			<div className={style.botones}>
+				{isFav ? (<button onClick={handleFavorite} className={style.btnFaveado}></button>) : 
+				(<button onClick={handleFavorite} className={style.btnNoFav}></button>)}
+
+				<button onClick={() => props.onClose(props.id)} className={style.botonX}> <strong>X</strong> </button>							
+			</div>
+
 			<Link to={`/detail/${props.id}`} className={style.nombre}>
 				<span>{props.name.toUpperCase()}</span>
 			</Link>
-			</div>
-			{/* <img src={props.image} alt="" className={style.imagen}/> */}
+
+			<img src={props.image} alt="" className={style.imagen}/>
 			<div className={style.texto}>
-				<h2>{">"} Specie: {props.species}</h2>
-				<h2>{">"} Gender: {props.gender}</h2>
+				<h4>{props.species.toUpperCase()}</h4>
+				<h5>{props.gender.toUpperCase()}</h5>
 			</div>
 		</div>
 	);

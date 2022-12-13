@@ -1,5 +1,6 @@
 import { connect, useDispatch } from "react-redux";
 import { filtrarPersonajes, ordenarPersonajes } from "../../redux/actions.js";
+import style from './Favorites.module.css'
 
 function Favorites({ myFavorites }) {
 	const dispatch = useDispatch();
@@ -33,9 +34,9 @@ function Favorites({ myFavorites }) {
 					<option value="unknown">Unknown</option>
 				</select>
 			</div>
-			<div>
+			<div className={style.favCards}>
 				{myFavorites?.map(character => (
-					<div>
+					<div className={style.favCard}>
 						<h3>
 							{character.name} - {character.id}
 						</h3>

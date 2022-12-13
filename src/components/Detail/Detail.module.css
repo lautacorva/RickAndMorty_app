@@ -1,0 +1,13 @@
+.detalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+    margin-top: 90px;
+    background-image: url('../../../images/portal.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 900px;
+}

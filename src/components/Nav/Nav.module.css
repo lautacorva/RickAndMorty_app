@@ -1,5 +1,5 @@
 .menu{
-    background-color: rgb(19, 16, 16);
+    background-color: rgb(70, 36, 12);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -18,5 +18,5 @@
 }
 
 .items:hover{
-    color: lightcoral;
+    text-shadow: 0px 0px 9px rgb(240, 186, 219);
 }

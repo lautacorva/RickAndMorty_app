@@ -1,81 +1,88 @@
 .card{
     border: 1px solid black;
-    width: 300px;
+    width: 280px;
     margin: 40px;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.521);
+    background-color: rgba(233, 150, 122, 0.719);
     box-shadow: 0px 0px 10px black;
 }
 
-.container{
+.botones{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(70, 36, 12);
+    height: 23px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+
+.btnNoFav{
+    border: none;
+    background-image: url('../../../images/corazon.png');
+    background-color: #0a880a00;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
     display: inline-block;
-    position: relative;
-
-}
-
-.imagen{
-    width: 300px;
-    height: 300px;
-}
-
-.botonFav{
-    position: absolute;
-    left: 1em;
-
-    color:black;
-    background-color:lightcoral;
-    border: 2px solid black;
-    width: 50px;
-    margin: 6px;
-    font-weight: 800;
+    height: 22px;
+    width: 20px;
+    margin: 1px;
+    margin-left: 5px;
+    border-radius: 7px;
     transition: 0.1s;
-    border-radius: 3px;
-    box-shadow: 2px 2px 5px black;
 }
 
-.botonFav:hover{
+.btnNoFav:hover{
     cursor: pointer;
-    width: 70px;
-    color: white;
-    font-weight: 900;
-    background-color: chartreuse;
-    color: black;
+    background-image: url('../../../images/corazon_fav.png');
+}
+
+.btnFaveado{
+    border: none;
+    background-image: url('../../../images/corazon_fav.png');
+    background-color: #0a880a00;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 29px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 7px;
+    transition: 0.1s;
+}
+
+.btnFaveado:hover{
+    cursor: pointer;
 }
 
 .botonX{
-    position: absolute;
-    right: 1em;
-
     color:white;
     background-color: crimson;
-    border: 1px solid white;
-    width: 40px;
-    margin: 6px;
-    font-weight: 800;
+    border: 1px solid black;
+    width: 50px;
+    margin: 2px;
+    font-weight: 400;
     transition: 0.1s;
     border-radius: 2px;
-    box-shadow: -2px 2px 5px black;
 }
 
 .botonX:hover{
     cursor: pointer;
-    width: 60px;
-    color: white;
-    font-weight: 900;
+    background-color: rgb(255, 2, 53);
+    font-weight: 400;
 }
 
 .nombre{
+    text-align: justify;
     text-decoration: none;
-    position: absolute;
-    right: 25%;
-    left: 25%;
-    bottom: 1em;
-    font-size: 25px;
-    font-weight: 800;
-    min-width: 200px;
     color: white;
-    text-shadow: 0px 0px 9px black;
-    transition: 0.1s
+    -webkit-text-stroke: 1px black;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 5px;
+    height: 25%;
 }
 
 .nombre:hover{
@@ -83,6 +90,29 @@
     text-shadow: 0px 0px 5px greenyellow;
 }
 
+.imagen{
+    margin-top: 15px;
+    width: 270px;
+    height: 280px;
+    border: 1px solid black;
+}
+
 .texto{
-    background-color: rgba(255, 255, 255, 0.548);
+    color: white;
+    padding: 0;
+}
+
+h4{
+    font-size: 17px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: rgb(173, 199, 60);
+}
+h5{
+    font-size: 17px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: rgb(62, 172, 59);
 }

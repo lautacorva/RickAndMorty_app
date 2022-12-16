@@ -1,9 +1,18 @@
+.selectores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .favCards{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .favCard{
-    
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.158);
+    border-radius: 5px;
 }

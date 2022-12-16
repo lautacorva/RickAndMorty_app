@@ -27,7 +27,7 @@ export default function Detail() {
 	return (
 		<div className={style.detalle}>
 			<div>
-				<button onClick={() => navigate("/home")}>Volver</button>
+				<button onClick={() => navigate("/home")} className={style.back}>Volver</button>
 			</div>
 			<h1>{character.name}</h1>
 			<h2>STATUS: {character.status}</h2>

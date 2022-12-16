@@ -11,11 +11,13 @@ function Favorites({ myFavorites }) {
 
 	return (
 		<div style={{paddingTop: '95px'}}>
-			<h1>Favorites</h1>
-			<div>
+			<h1 style={{color: 'white', fontSize: '38px'}}>Your favorites</h1>
+			<div className={style.selectores}>
+				<h3 style={{color:'white', margin:'5px'}}>Orden</h3>
 				<select
 					name="order"
 					onChange={e => dispatch(ordenarPersonajes(e.target.value))}
+					style={{marginRight:'10px'}}
 				>
 					<option value="default" disabled>
 						Select...
@@ -23,6 +25,7 @@ function Favorites({ myFavorites }) {
 					<option value="Ascendente">Ascendente</option>
 					<option value="Descendente">Descendente</option>
 				</select>
+				<h3 style={{color:'white', margin:'5px'}}>Género</h3>
 				<select name="gender" id="" onChange={handleFilter}>
 					<option value="" disabled>
 						Select...
@@ -35,12 +38,12 @@ function Favorites({ myFavorites }) {
 				</select>
 			</div>
 			<div className={style.favCards}>
-				{myFavorites?.map(character => (
+				{myFavorites.map(character => (
 					<div className={style.favCard}>
-						<h3>
-							{character.name} - {character.id}
+						<img src={character.image} alt="character" />
+						<h3 style={{color:'white'}}>
+							{character.name.toUpperCase()} - ID: {character.id}
 						</h3>
-						<img src={character.image} alt="" />
 					</div>
 				))}
 			</div>

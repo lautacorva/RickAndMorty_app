@@ -11,3 +11,18 @@
     height: 600px;
     width: 900px;
 }
+
+.back{
+    width: 95px;
+    height: 30px;
+    margin-left: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: crimson;
+    border-radius: 3px;
+}
+
+.back:hover{
+    cursor: pointer;
+    background-color: rgb(255, 2, 53);
+}

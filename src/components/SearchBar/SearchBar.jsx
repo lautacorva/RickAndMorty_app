@@ -14,8 +14,8 @@ export default function SearchBar(props) {
 
 	return (
 		<div className={style.barra}>
-			<input type="number" value={character} onChange={handleChange} placeholder='ID' style={{height: '35px', padding: '0px', fontWeight: '600'}} className={error && style.danger}/>
-			<button onClick={() => props.onSearch(character)} className={style.boton}>AGREGAR</button>
+			<input type="number" value={character} onChange={handleChange} placeholder='ID' style={{height: '35px', padding: '0px', fontWeight: '600', borderRadius:'3px'}} className={error && style.danger}/>
+			<button onClick={() => props.onSearch(character)} className={style.boton}>Buscar</button>
 		</div>
 	);
 }

@@ -1,7 +1,9 @@
 .detalle{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     margin: 0px auto;
     margin-top: 90px;
     background-image: url('../../../images/portal.png');
@@ -12,10 +14,39 @@
     width: 900px;
 }
 
+.name{
+    font-size: 50px;
+    margin: 0;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0px 2px 6px black;
+}
+
+.caracts{
+    background-color: rgba(240, 248, 255, 0.555);
+    border: 1px solid rgb(60, 219, 131);
+    margin-left: 70px;
+    margin-top: 0px;
+    padding: 9px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.image{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    margin-top: 40px;
+    box-shadow: 0px 2px 6px black;
+}
+
 .back{
     width: 95px;
     height: 30px;
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-right: -50px;
+    margin-bottom: 0px;
     font-weight: 700;
     color: white;
     background-color: crimson;

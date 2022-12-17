@@ -13,6 +13,25 @@
 
 .favCard{
     border: 2px solid black;
-    background-color: rgba(0, 0, 0, 0.158);
+    background-color: rgba(0, 0, 0, 0.63);
     border-radius: 5px;
+}
+
+.remove{
+    position: absolute;
+    margin: 5px;
+    margin-left: 260px;
+    border: none;
+    background-image: url('../../../images/corazon_fav.png');
+    background-color: #0a880a00;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px white;
+}
+.remove:hover{
+    cursor: pointer;
 }

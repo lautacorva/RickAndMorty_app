@@ -10,7 +10,7 @@
 .botones{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(70, 36, 12);
+    background-color: rgb(49, 190, 124);
     height: 23px;
     margin-bottom: 15px;
     border-bottom: 2px solid black;

@@ -1,12 +1,18 @@
 import { connect, useDispatch } from "react-redux";
 import { filtrarPersonajes, ordenarPersonajes } from "../../redux/actions.js";
+import { removerFavorito } from "../../redux/actions.js";
 import style from './Favorites.module.css'
+
 
 function Favorites({ myFavorites }) {
 	const dispatch = useDispatch();
 
 	function handleFilter(e) {
 		dispatch(filtrarPersonajes(e.target.value));
+	}
+	
+	function removeFav(id) {
+		dispatch(removerFavorito(id))
 	}
 
 	return (
@@ -40,6 +46,7 @@ function Favorites({ myFavorites }) {
 			<div className={style.favCards}>
 				{myFavorites.map(character => (
 					<div className={style.favCard}>
+						<button className={style.remove} onClick={() => removeFav(character.id)}></button>
 						<img src={character.image} alt="character" />
 						<h3 style={{color:'white'}}>
 							{character.name.toUpperCase()} - ID: {character.id}

@@ -36,7 +36,7 @@ export default function Form(props) {
 		<div className={style.primera}>
 			<form onSubmit={handleSubmit} className={style.segunda}>
 				<img src={image} alt="home" style={{width:'100%',}} />
-				<h2 style={{marginBlockStart:'0', marginBlockEnd:'50px', color: 'white',textShadow: '0px 0px 9px black'}}>ENJOY THE UNIVERSE</h2>
+				<h2 style={{marginBlockStart:'-23px', marginBlockEnd:'50px', color: 'white',textShadow: '0px 0px 9px black'}}>enjoy the universe</h2>
 				<input
 					className={style.inputs}
 					type='text'
@@ -57,7 +57,7 @@ export default function Form(props) {
 				/>
 				<p className={style.errMsg}>{errors.password && errors.password}</p>
 
-				<button className={style.ingresar} type="submit">INGRESAR</button>
+				<button className={style.ingresar} type="submit">Ingresar</button>
 			</form>
 		</div>
 	);

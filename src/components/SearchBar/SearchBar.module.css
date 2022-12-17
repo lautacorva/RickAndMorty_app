@@ -12,11 +12,12 @@
     margin-left: 10px;
     font-weight: 700;
     color: white;
-    background-color: crimson;
-    border-radius: 3px;
+    background-color: rgb(30, 156, 129);
+    border-radius: 5px;
+    border: 1px solid rgb(49, 160, 149);
 }
 
 .boton:hover{
     cursor: pointer;
-    background-color: rgb(255, 2, 53);
+    background-color: rgb(51, 218, 201);
 }
